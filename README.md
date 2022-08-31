@@ -1,26 +1,37 @@
-# React Router [![Travis][build-badge]][build]
-
-[build-badge]: https://img.shields.io/travis/ReactTraining/react-router/v4.svg?style=flat-square
-[build]: https://travis-ci.org/ReactTraining/react-router
+# react-router
 
 Declarative routing for [React](https://facebook.github.io/react).
 
-## Docs
+## Installation
 
-[View the docs here](https://reacttraining.com/react-router)
+Using [npm](https://www.npmjs.com/):
 
-## Packages
+    $ npm install --save react-router
 
-This repository is a monorepo that we manage using [Lerna](https://github.com/lerna/lerna). That means that we actually publish [several packages](https://github.com/ReactTraining/react-router/tree/v4/packages) to npm from the same codebase, including: 
+Then with a module bundler like [webpack](https://webpack.github.io/), use as you would anything else:
 
-- `react-router` - The core of React Router ([API docs](packages/react-router/docs))
-- `react-router-dom` - DOM bindings for React Router ([API docs](packages/react-router-dom/docs))
-- `react-router-native` - [React Native](https://facebook.github.io/react-native/) bindings for React Router ([API docs](packages/react-router-native/docs))
-- `react-router-redux` - [React Router Redux](packages/react-router-redux) Integration with React Router and Redux
-- `react-router-config` - [React Router Config](packages/react-router-config) static route config helpers
+```js
+// using ES6 modules
+import { Router, Route, Switch } from 'react-router'
 
-## Thanks
+// using CommonJS modules
+var Router = require('react-router').Router
+var Route = require('react-router').Route
+var Switch = require('react-router').Switch
+```
 
-Thanks to [our sponsors](/SPONSORS.md) for supporting the development of React Router.
+The UMD build is also available on [unpkg](https://unpkg.com):
 
-Also, thanks to [BrowserStack](https://www.browserstack.com/) for providing the infrastructure that allows us to run our build in real browsers.
+```html
+<script src="https://unpkg.com/react-router/umd/react-router.min.js"></script>
+```
+
+You can find the library on `window.ReactRouter`.
+
+## Issues
+
+If you find a bug, please file an issue on [our issue tracker on GitHub](https://github.com/ReactTraining/react-router/issues).
+
+## Credits
+
+React Router is built and maintained by [React Training](https://reacttraining.com).
