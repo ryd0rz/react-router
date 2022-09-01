@@ -1,38 +1,37 @@
-# Welcome to React Router &middot; [![npm package][npm-badge]][npm] [![build][build-badge]][build]
+# react-router
 
-[npm-badge]: https://img.shields.io/npm/v/react-router-dom.svg?style=flat-square
-[npm]: https://www.npmjs.org/package/react-router-dom
-[build-badge]: https://img.shields.io/github/workflow/status/remix-run/react-router/test/dev?style=flat-square
-[build]: https://github.com/remix-run/react-router/actions/workflows/test.yml
+Declarative routing for [React](https://facebook.github.io/react).
 
-React Router is a lightweight, fully-featured routing library for the [React](https://reactjs.org) JavaScript library. React Router runs everywhere that React runs; on the web, on the server (using node.js), and on React Native.
+## Installation
 
-If you're new to React Router, we recommend you start with [the getting started guide](/docs/getting-started/installation.md).
+Using [npm](https://www.npmjs.com/):
 
-If you're migrating to v6 from v5 (or v4, which is the same as v5), check out [the migration guide](/docs/upgrading/v5.md). If you're migrating from Reach Router, check out [the migration guide for Reach Router](/docs/upgrading/reach.md). If you need to find the code for v5, [it is on the `v5` branch](https://github.com/remix-run/react-router/tree/v5).
+    $ npm install --save react-router
 
-When v6 is stable we will publish the docs on our website.
+Then with a module bundler like [webpack](https://webpack.github.io/), use as you would anything else:
 
-## Contributing
+```js
+// using ES6 modules
+import { Router, Route, Switch } from 'react-router'
 
-There are many different ways to contribute to React Router's development. If you're interested, check out [our contributing guidelines](CONTRIBUTING.md) to learn how you can get involved.
+// using CommonJS modules
+var Router = require('react-router').Router
+var Route = require('react-router').Route
+var Switch = require('react-router').Switch
+```
 
-## Packages
+The UMD build is also available on [unpkg](https://unpkg.com):
 
-This repository is a monorepo containing the following packages:
+```html
+<script src="https://unpkg.com/react-router/umd/react-router.min.js"></script>
+```
 
-- [`react-router`](/packages/react-router)
-- [`react-router-dom`](/packages/react-router-dom)
-- [`react-router-native`](/packages/react-router-native)
+You can find the library on `window.ReactRouter`.
 
-## Changes
+## Issues
 
-Detailed release notes for a given version can be found [on our releases page](https://github.com/remix-run/react-router/releases).
+If you find a bug, please file an issue on [our issue tracker on GitHub](https://github.com/ReactTraining/react-router/issues).
 
-## Funding
+## Credits
 
-You may provide financial support for this project by donating [via Open Collective](https://opencollective.com/react-router). Thank you for your support!
-
-## About
-
-React Router is developed and maintained by [Remix Software](https://remix.run) and many [amazing contributors](https://github.com/remix-run/react-router/graphs/contributors).
+React Router is built and maintained by [React Training](https://reacttraining.com).
